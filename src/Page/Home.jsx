@@ -8,12 +8,15 @@ import Featured from "../components/feautured/Featured";
 import Cards from "../components/cards/Cards";
 import Footer from "../components/footer/Footer";
 import "./style.css";
+import Chatbot from "../components/chatbot/Chatbot";
 
 const Home = () => {
   return (
     <div className="app">
       <Navbar />
+
       <LandingPage />
+      <Chatbot />
       <Marquee />
       <About />
       <Eyes />
