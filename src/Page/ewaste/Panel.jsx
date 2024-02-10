@@ -1,5 +1,9 @@
-import React from "react";
 import "./style.css";
+import React, { useLayoutEffect, useRef, useState } from "react";
+import gsap from "gsap";
+
+import { useGSAP } from "@gsap/react";
+import Navbar from "../../components/navbar/Navbar";
 
 const Panel = () => {
   return (

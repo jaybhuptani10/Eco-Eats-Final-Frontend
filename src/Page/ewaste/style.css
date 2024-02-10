@@ -176,9 +176,20 @@
     object-position: center;
 }
 .panel-screen{
+    overflow: hidden;
+    border-radius: 30px;
     height: 80vh;
     width: 90vw;
     background-color: #F3F2FA;
+    display: flex;
+    margin-top: 5vw;
     
     
+}
+.panel-left{
+    width: 50%;
+}
+.panel-right{
+    width: 50%;
+    background-color: blue;
 }

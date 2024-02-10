@@ -1,12 +1,15 @@
-import React, { useState } from "react";
+import React, { useLayoutEffect, useRef, useState } from "react";
 import "./style.css";
-
+import gsap from "gsap";
 import Navbar from "../../components/navbar/Navbar";
 import CardsContainer from "./CardsContainer";
 import HarmfullEffects from "./HarmfullEffects";
 import Solution from "./Solution"; // Import the Solution component
 import { useEffect } from "react";
 import Panel from "./Panel";
+
+import { useGSAP } from "@gsap/react";
+import Formss from "./Formss";
 
 const Ewaste = () => {
   const [buttonSelected, setButtonSelected] = useState("What it is");
@@ -16,8 +19,18 @@ const Ewaste = () => {
     setButtonSelected(buttonText);
   };
 
+  const comp = useRef(null);
+
+  useGSAP(
+    () => {
+      // gsap code here...
+      gsap.to(".panel-screen", { x: 360 }); // <-- automatically reverted
+    },
+    { scope: comp }
+  );
+
   return (
-    <div className="E-screen">
+    <div ref={comp} className="E-screen">
       <div className="E-hero">
         <h3>EcoEats</h3>
         <h1>E-WASTE :</h1>
@@ -45,6 +58,8 @@ const Ewaste = () => {
         <CardsContainer />
       )}
       <Panel />
+      <Panel />
+      <Formss />
     </div>
   );
 };
