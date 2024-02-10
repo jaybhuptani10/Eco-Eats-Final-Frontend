@@ -25,22 +25,42 @@ const Solution = () => {
         <div className="card-main">
           <h1>Solution</h1>
           <ul typeof="rounded">
-            <li>E-waste comprises discarded electronic devices.</li>
-            <li>Examples include computers, phones, TVs, and appliances.</li>
             <li>
-              Contains hazardous materials harmful to health and environment.
+              Establish Recycling Programs: Set up e-waste recycling programs to
+              encourage proper disposal and recycling of electronic devices.
             </li>
-            <li>Improper disposal leads to pollution and health risks.</li>
             <li>
-              Recycling extracts valuable materials and reduces resource demand.
+              Promote Extended Producer Responsibility (EPR): Hold manufacturers
+              accountable for managing the end-of-life of their products through
+              policies like EPR.
             </li>
-            <li>Regulations aim to manage e-waste responsibly.</li>
-            <li>Global issue due to rapid tech advancement and consumption.</li>
+            <li>
+              Raise Awareness: Educate the public about the importance of proper
+              e-waste management and the benefits of recycling.
+            </li>
+            <li>
+              Encourage Circular Economy: Promote practices that reuse,
+              refurbish, and recycle electronics to minimize waste generation.
+            </li>
+            <li>
+              Support Informal Sector: Provide support and training to workers
+              in the informal e-waste recycling sector to improve safety
+              standards.
+            </li>
+            <li>
+              Invest in Research: Support research and innovation to develop
+              sustainable e-waste management technologies and processes.
+            </li>
+            <li>
+              Encourage Responsible Consumption: Encourage consumers to make
+              informed choices about electronic products and practice
+              responsible disposal.
+            </li>
           </ul>
         </div>
         <div className="card-right">
           <img
-            src="https://imgs.search.brave.com/eudLyJblPAohiWW0aoBPEwvgJmKpMvGwf9HrTX4FuGg/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9zdDIu/ZGVwb3NpdHBob3Rv/cy5jb20vMTY1NTMx/My8xMDk5OS9pLzQ1/MC9kZXBvc2l0cGhv/dG9zXzEwOTk5NTA3/MC1zdG9jay1waG90/by1wYXJ0cy1vZi1v/bGQtb3B0aWNhbC1k/cml2ZXMuanBn"
+            src="https://images.unsplash.com/photo-1561064041-38db54d8c63d?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt=""
           />
         </div>

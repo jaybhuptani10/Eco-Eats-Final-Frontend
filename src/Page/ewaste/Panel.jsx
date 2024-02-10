@@ -1,11 +1,13 @@
+import React, { useEffect, useRef, useState } from "react";
 import "./style.css";
-import React, { useLayoutEffect, useRef, useState } from "react";
-import gsap from "gsap";
-
-import { useGSAP } from "@gsap/react";
-import Navbar from "../../components/navbar/Navbar";
+import { useScroll } from "framer-motion";
 
 const Panel = () => {
+  const ref = useRef(null);
+  useScroll({
+    target: ".panel-screen",
+    offset: ["1,1", "1.33 1"],
+  });
   return (
     <div className="panel-screen">
       <div className="panel-left">

@@ -2,9 +2,10 @@
     width: 100%;
     height: 100vh;
     background-color: black;
+    display: flex;
 }
 .first{
-    width: 50%;
+    width: 40%;
 }
 .second{
     width: 50%;
@@ -14,4 +15,8 @@
     margin-bottom: -42px;
     font-size: 7vw;
     font-weight: 800;
+}
+.second p{
+    font-size: 1.5vw;
+    letter-spacing: 0.07vw;
 }

@@ -20,12 +20,22 @@
     
 
 }
+.E-hero img{
+    height: 30%;
+    width: 7%;
+}
 .E-hero h3{
     font-size: 2vw;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .E-hero h1{
-    
+    font-family: "Honk", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "MORF" 15,
+    "SHLN" 50;
     
     font-size: 4.5vw;
     color: #F84F39;
@@ -34,7 +44,14 @@
 }
 .E-hero span{
     font-size: 2.0vw;
+    
     color: black;
+    font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:100;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 }
 .butts{
     margin-top: 4vw;
@@ -165,7 +182,7 @@
     height: 100%;
     
     overflow: hidden;
-    border-radius: 30px;
+    border-radius: 70px;
     width: 30%;
     background-color: #F84F39;
 }
@@ -177,7 +194,7 @@
 }
 .panel-screen{
     overflow: hidden;
-    border-radius: 30px;
+    border-radius: 60px;
     height: 80vh;
     width: 90vw;
     background-color: #F3F2FA;

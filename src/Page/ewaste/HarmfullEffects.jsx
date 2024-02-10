@@ -25,22 +25,40 @@ const HarmfullEffects = () => {
         <div className="card-main">
           <h1>Harmful Effects</h1>
           <ul typeof="rounded">
-            <li>E-waste comprises discarded electronic devices.</li>
-            <li>Examples include computers, phones, TVs, and appliances.</li>
             <li>
-              Contains hazardous materials harmful to health and environment.
+              Toxic Chemicals: E-waste contains hazardous substances like lead,
+              mercury, and cadmium.
             </li>
-            <li>Improper disposal leads to pollution and health risks.</li>
             <li>
-              Recycling extracts valuable materials and reduces resource demand.
+              Exposure Risks: Improper disposal exposes people to respiratory,
+              neurological, and reproductive health risks.
             </li>
-            <li>Regulations aim to manage e-waste responsibly.</li>
-            <li>Global issue due to rapid tech advancement and consumption.</li>
+            <li>
+              Environmental Pollution: Toxic substances leach into soil and
+              water, contaminating ecosystems.
+            </li>
+            <li>
+              Air Pollution: Open burning releases harmful fumes and particulate
+              matter, contributing to respiratory problems.
+            </li>
+            <li>
+              Dumping Grounds: Developing countries, including India, often
+              receive e-waste from developed nations, exacerbating local
+              environmental and health problems.
+            </li>
+            <li>
+              Occupational Hazards: Workers in informal recycling sectors face
+              risks due to exposure to hazardous chemicals.
+            </li>
+            <li>
+              Global Impact: E-waste generates a global problem, affecting
+              ecosystems and health worldwide.
+            </li>
           </ul>
         </div>
         <div className="card-right">
           <img
-            src="https://imgs.search.brave.com/eudLyJblPAohiWW0aoBPEwvgJmKpMvGwf9HrTX4FuGg/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9zdDIu/ZGVwb3NpdHBob3Rv/cy5jb20vMTY1NTMx/My8xMDk5OS9pLzQ1/MC9kZXBvc2l0cGhv/dG9zXzEwOTk5NTA3/MC1zdG9jay1waG90/by1wYXJ0cy1vZi1v/bGQtb3B0aWNhbC1k/cml2ZXMuanBn"
+            src="https://images.unsplash.com/photo-1555664424-778a1e5e1b48?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt=""
           />
         </div>

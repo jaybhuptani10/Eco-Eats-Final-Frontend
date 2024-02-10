@@ -5,6 +5,7 @@ import Login from "./components/login/Login";
 import Register from "./components/login/Register";
 import Ewaste from "./Page/ewaste/Ewaste";
 import Food from "./Page/Food/Food";
+import About from "./Page/About/About";
 function App() {
   const locomotiveScroll = new LocomotiveScroll();
   const onTabChange = (tab) => {};
@@ -25,6 +26,7 @@ function App() {
         />
         <Route path="/E-waste" element={<Ewaste />} />
         <Route path="/Food-Waste" element={<Food />} />
+        <Route path="/About" element={<About />} />
       </Routes>
     </BrowserRouter>
   );
