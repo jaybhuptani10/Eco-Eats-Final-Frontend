@@ -6,6 +6,7 @@ import CardsContainer from "./CardsContainer";
 import HarmfullEffects from "./HarmfullEffects";
 import Solution from "./Solution"; // Import the Solution component
 import { useEffect } from "react";
+import Panel from "./Panel";
 
 const Ewaste = () => {
   const [buttonSelected, setButtonSelected] = useState("What it is");
@@ -35,6 +36,7 @@ const Ewaste = () => {
           </div>
         </div>
       </div>
+
       {buttonSelected === "Harmful effects" ? (
         <HarmfullEffects />
       ) : buttonSelected === "Solution" ? (
@@ -42,6 +44,7 @@ const Ewaste = () => {
       ) : (
         <CardsContainer />
       )}
+      <Panel />
     </div>
   );
 };
