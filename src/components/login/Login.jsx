@@ -20,7 +20,7 @@ const Login = ({ data, onTabChange }) => {
     onTabChange(tab, index);
   };
   return (
-    <div className="app">
+    <div className="apps">
       <h1>LOG IN</h1>
       <div className="Container">
         <div className="up">

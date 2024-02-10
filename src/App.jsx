@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Page/Home";
 import Login from "./components/login/Login";
 import Register from "./components/login/Register";
+import Ewaste from "./Page/ewaste/Ewaste";
 function App() {
   const locomotiveScroll = new LocomotiveScroll();
   const onTabChange = (tab) => {};
@@ -21,6 +22,7 @@ function App() {
             <Register data={["User", "Agent"]} onTabChange={onTabChange} />
           }
         />
+        <Route path="/E-waste" element={<Ewaste />} />
       </Routes>
     </BrowserRouter>
   );
