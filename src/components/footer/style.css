@@ -1,0 +1,17 @@
+.main-footer{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+.first{
+    width: 50%;
+}
+.second{
+    width: 50%;
+}
+
+.first>h1{
+    margin-bottom: -42px;
+    font-size: 7vw;
+    font-weight: 800;
+}

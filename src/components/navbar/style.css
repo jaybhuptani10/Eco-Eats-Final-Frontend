@@ -1,0 +1,29 @@
+.nav{
+    width: 100vw;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2vw;
+    position: fixed;
+    z-index: 999;
+
+}
+.a-link{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.links{
+    display: flex;
+    gap: 30px;
+    
+}
+@media (max-width:600px) {
+    .nav{
+        flex-direction: column;
+        font-size: 3vw;
+    }
+    .logo{
+        font-size: 1vw;
+    }
+    
+}
