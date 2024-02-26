@@ -91,3 +91,54 @@ input{
     border-radius: 20px;
     height: 30px;
 }
+.Select-Page{
+    display: flex;
+    padding: 50px;
+    gap: 30px;
+    
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+.E-waste{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;    
+    width: 50%;
+    background-color: #d14334;
+}
+.Select-Page h1{
+    text-align: center;
+    font-size: 3.7vw;
+    margin-top: 7vw;
+}
+.Select-Page p{
+    font-size: 1vw;
+    margin-bottom: 5vw;
+    margin-top: 5vw;
+    width: 50%;
+}
+.Select-Page button{
+    background-color: aliceblue;
+    color: black;
+    margin-top: 2vw;
+    width:40%;
+}
+.Select-Page button:hover{
+    background-color: #028f76;
+   
+    color: white;
+}
+.Select-Page .foodbut:hover{
+    background-color: #d14334;
+}
+.Food{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #028f76;
+   
+    width: 50%;
+}

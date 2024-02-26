@@ -2,6 +2,8 @@ import React from "react";
 import "./style.css";
 import { useNavigate } from "react-router-dom";
 import img from "./eco2.png";
+import { CgProfile } from "react-icons/cg";
+
 const Navbar = () => {
   const navigate = useNavigate();
   const onNewLink = (e) => {
@@ -28,6 +30,7 @@ const Navbar = () => {
           alt=""
         />
       </div>
+
       <div className="links">
         {["E-Waste", "Food-Waste", "About"].map((item, index) => (
           <a
@@ -41,9 +44,11 @@ const Navbar = () => {
           </a>
         ))}
       </div>
+
       <div className="login-signup">
         <button>Contribute</button>
       </div>
+      <CgProfile onClick={() => navigate("/Dashboard")} className="Profile" />
     </div>
   );
 };
