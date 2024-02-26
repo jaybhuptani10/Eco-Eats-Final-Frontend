@@ -51,7 +51,7 @@ const Food = () => {
             </div>
             <div className="steps">
               <div className="step-left">
-                <h3>Step 1</h3>
+                <h3>Step 3</h3>
               </div>
               <div className="step-right">
                 <h1>Wait.....</h1>

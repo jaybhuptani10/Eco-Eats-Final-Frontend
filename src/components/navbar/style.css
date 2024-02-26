@@ -34,6 +34,21 @@
     
     
 }
+.login-signup button{
+    
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    width: 8vw;
+    border-radius: 0px;
+}
+.login-signup button:hover{
+    
+    transition: 0.5s ease-in-out;
+    background-color: rgb(255, 255, 255);
+    color: black;
+
+}
+
 @media (max-width:600px) {
     .nav{
         flex-direction: column;

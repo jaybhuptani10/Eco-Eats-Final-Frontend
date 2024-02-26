@@ -41,6 +41,9 @@ const Navbar = () => {
           </a>
         ))}
       </div>
+      <div className="login-signup">
+        <button>Contribute</button>
+      </div>
     </div>
   );
 };

@@ -1,0 +1,93 @@
+
+video{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.containerr{
+    display: flex;
+   
+    height: 100vh;
+  
+    width: 100vw;
+    
+  
+    background-color: cornflowerblue;
+}
+.left{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    
+    padding: 10px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.containerr h1{
+    font-size: 3vw;
+}
+input{
+    width: 50vw;
+}
+.submit-page{
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    color: white;
+}
+
+.icons{
+    color: aqua;
+    font-size: 30px;
+}
+.left-card{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    width: 50%;
+    margin: 50px;
+    
+    align-items: center;
+    
+}
+.left-card h1{
+    margin-top: 8vw;
+    font-size: 3vw;
+    font-weight: 700;
+}
+.left-card p{
+    margin-top: 2vw;
+    width: 60%;
+    
+}
+.left-card ul{
+    margin-top: 2vw;
+    width: 60%;
+}
+.left-card ul li{
+    display: flex;
+    
+    gap: 10px;
+    margin-top: 1.4vw;
+    
+}
+.right-card{
+    border: 1px solid black;
+    height: 90%;
+    width: 50%;
+    margin: 50px;
+}
+.continue{
+    margin-top: 20px;
+    background-color: rgb(125, 228, 125);
+    width: 60%;
+    border-radius: 20px;
+    height: 30px;
+}
