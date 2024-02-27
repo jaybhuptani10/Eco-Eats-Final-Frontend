@@ -2,6 +2,7 @@ import React from "react";
 import { TiTick } from "react-icons/ti";
 import video from "./try.mp4";
 import IMG from "./hmm.png";
+import "./user.css";
 import { useNavigate } from "react-router-dom";
 
 const Submit = () => {

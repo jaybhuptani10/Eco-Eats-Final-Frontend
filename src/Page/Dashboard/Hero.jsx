@@ -1,5 +1,5 @@
 import React from "react";
-import "./Dashboard.css";
+import "./dashboard.css";
 const Hero = ({ data }) => {
   const content = Object.entries(data).map(([key, value]) => (
     <p key={key}>

@@ -1,5 +1,5 @@
 import React from "react";
-import "./Dashboard.css";
+import "./dashboard.css";
 const Leftnav = () => {
   return (
     <div className="leftnav">

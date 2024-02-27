@@ -1,5 +1,5 @@
 import React from "react";
-import "./Dashboard.css";
+import "./dashboard.css";
 import Navbar from "../../components/navbar/Navbar";
 import Leftnav from "./Leftnav";
 import Hero from "./Hero";
