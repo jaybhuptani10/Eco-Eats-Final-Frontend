@@ -10,6 +10,8 @@ import Submit from "./Page/Forms/Submit";
 import Formselect from "./Page/Forms/Formselect";
 import Dashboard from "./Page/Dashboard/Dashboard";
 import Clothes from "./Page/clothes/Clothes";
+import Signup from "./Page/Login-Signup/Signup";
+import Login from "./Page/Login-Signup/Login";
 function App() {
   const locomotiveScroll = new LocomotiveScroll();
   const onTabChange = (tab) => {};
@@ -18,6 +20,8 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/Signup" element={<Signup />} />
+        <Route path="/Login" element={<Login />} />
 
         <Route path="/E-waste" element={<Ewaste />} />
         <Route path="/Food-Waste" element={<Food />} />

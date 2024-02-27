@@ -15,6 +15,8 @@ const Navbar = () => {
       navigate("/Food-Waste");
     } else if (link === "About") {
       navigate("/About");
+    } else if (link === "Clothes-Donation") {
+      navigate("/Clothes");
     } else {
       navigate("/");
     }
@@ -32,17 +34,19 @@ const Navbar = () => {
       </div>
 
       <div className="links">
-        {["E-Waste", "Food-Waste", "About"].map((item, index) => (
-          <a
-            onClick={(e) => {
-              onNewLink(e);
-            }}
-            key={index}
-            className={`a-link ${index === 4 && "ml-12"}`}
-          >
-            {item}
-          </a>
-        ))}
+        {["E-Waste", "Food-Waste", "Clothes-Donation", "About"].map(
+          (item, index) => (
+            <a
+              onClick={(e) => {
+                onNewLink(e);
+              }}
+              key={index}
+              className={`a-link ${index === 4 && "ml-12"}`}
+            >
+              {item}
+            </a>
+          )
+        )}
       </div>
 
       <div className="login-signup">
