@@ -1,5 +1,5 @@
 import React from "react";
-import "./Clothes.css";
+import "./clothes.css";
 import Navbar from "../../components/navbar/Navbar";
 import IMG from "./c1.png";
 const Clothes = () => {
