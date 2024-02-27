@@ -46,7 +46,7 @@ const Navbar = () => {
       </div>
 
       <div className="login-signup">
-        <button>Contribute</button>
+        <button onClick={() => navigate("/select")}>Contribute</button>
       </div>
       <CgProfile onClick={() => navigate("/Dashboard")} className="Profile" />
     </div>

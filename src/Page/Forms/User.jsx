@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import "./User.css";
+import "./user.css";
 import { ToastContainer, toast } from "react-toastify";
 
 const User = () => {

@@ -1,0 +1,51 @@
+.nav button{
+        background-color: #000000;
+        color: #ffffff;
+        
+    
+}
+.Clothes-Page{
+    height: 100vh;
+    
+      
+    width: 100%;
+}
+.Page-1{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('https://cdn.pixabay.com/photo/2022/01/28/17/33/lines-6975227_1280.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.anta-regular {
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+.heading-text{
+    position: absolute;
+    color: #000000;
+    
+    right: 4%;
+    top: -10%;
+    padding-top: 17rem;
+   
+   
+}
+.heading-text h1{
+    font-size: 3.6rem;
+}
+.heading-text p{
+    font-size: 2rem;
+    
+    position: absolute;
+    right: 1%;
+}
+.image{
+    position: absolute;
+    right: 15%;
+    top: 30%;
+    height: 20rem;
+    width: 20rem;
+}

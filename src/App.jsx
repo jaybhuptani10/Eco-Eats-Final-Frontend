@@ -9,6 +9,7 @@ import User from "./Page/Forms/User";
 import Submit from "./Page/Forms/Submit";
 import Formselect from "./Page/Forms/Formselect";
 import Dashboard from "./Page/Dashboard/Dashboard";
+import Clothes from "./Page/clothes/Clothes";
 function App() {
   const locomotiveScroll = new LocomotiveScroll();
   const onTabChange = (tab) => {};
@@ -23,6 +24,7 @@ function App() {
         <Route path="/About" element={<About />} />
         <Route path="/Form" element={<User />} />
         <Route path="/Submit" element={<Submit />} />
+        <Route path="/Clothes" element={<Clothes />} />
         <Route path="/Select" element={<Formselect />} />
         <Route path="/Dashboard" element={<Dashboard />} />
       </Routes>
