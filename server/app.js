@@ -10,10 +10,12 @@ const app = express();
 
 app.use(express.json());
 
-app.use(cors())
+app.use(cors({origin: "https://eco-eats-delta.vercel.app",
+methods:["GET","POST"],
+credentials:true}))
 app.use("/api",mainRouter);
 
-const port = process.env.PORT || 3000;
+
 
 const start = async() =>{
     try{
