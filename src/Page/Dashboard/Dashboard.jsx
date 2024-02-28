@@ -1,11 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./dashboard.css";
 import Navbar from "../../components/navbar/Navbar";
 import Leftnav from "./Leftnav";
 import Hero from "./Hero";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Dashboard = () => {
+  const navigate = useNavigate();
+  useEffect(() => {
+    const token = localStorage.getItem("auth"); // Assuming you store the token in localStorage upon login
+  
+    if (!token) {
+      navigate("/Login");
+    }
+  }, []);
   const [data, setData] = useState([
     { name: "Rahul", age: 23, address: "Delhi", phone: "1234567890" },
     { name: "Sita", age: 25, address: "Mumbai", phone: "9876543210" },
