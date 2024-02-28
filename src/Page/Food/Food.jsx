@@ -26,7 +26,12 @@ const Food = () => {
               </div>
             </div>
           </div>
-          <div className="food-right"></div>
+          <div className="food-right">
+            <img
+              src="https://images.unsplash.com/photo-1553787434-45e1d245bfbb?q=80&w=1910&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+          </div>
         </div>
         <div className="donate-food">
           <div className="left-heading">
@@ -91,7 +96,6 @@ const Food = () => {
             </ul>
           </div>
         </div>
-        <Formss></Formss>
       </div>
     </>
   );
