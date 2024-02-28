@@ -11,8 +11,10 @@ import IMG6 from "./c5.png";
 import { useState } from "react";
 import TextBox2 from "./TextBox2";
 import TextBox3 from "./TextBox3";
+import { useNavigate } from "react-router-dom";
 
 const Clothes = () => {
+  const navigate = useNavigate();
   const [Option1, setOption1] = useState(true);
   const [Option2, setOption2] = useState(false);
   const [Option3, setOption3] = useState(false);
@@ -46,8 +48,8 @@ const Clothes = () => {
           <img src={IMG} alt="" />
         </div>
       </div>
-      <div className="cards3">
-        <div className="card1 card">
+      <div className="cards-collection">
+        <div className="Cardds-1 card-single">
           <div className="img">
             {" "}
             <img src={IMG2} alt="" />
@@ -55,7 +57,7 @@ const Clothes = () => {
 
           <h1>Donate</h1>
         </div>
-        <div className="card2 card">
+        <div className="Cardds-2 card-single">
           <div className="photos">
             <img src={IMG4} alt="" />
             <img src={IMG3} alt="" />
@@ -65,7 +67,11 @@ const Clothes = () => {
 
           <h1>Clothes</h1>
         </div>
-        <div className="card3 card">Now</div>
+        <div className="Cardds-3 card-single">
+          <div onClick={() => navigate("/Donate")} className="buttondiv">
+            Now
+          </div>
+        </div>
       </div>
       <div className="about-donation">
         <div className="options">

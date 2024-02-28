@@ -12,16 +12,16 @@
 .featured h1{
     font-size: 5vw;
 }
-.container{
+.containner{
     padding: 0 30px;
 }
-.cards{
+.cardds{
     width: 100%;
     display: flex;
     gap: 40px;
     margin-top: 20px;
 }
-.card{
+.carrd{
     width: 50%;
     height: 80vh;
     position: relative;

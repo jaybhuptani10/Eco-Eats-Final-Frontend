@@ -69,8 +69,6 @@ const Ewaste = () => {
         ) : (
           <CardsContainer />
         )}
-
-        <Formss />
       </div>
     </>
   );

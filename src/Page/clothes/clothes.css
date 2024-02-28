@@ -50,13 +50,15 @@
     height: 20rem;
     width: 20rem;
 }
-.cards3{
+.cards-collection{
     display: flex;
     height: 60vh;
     overflow: hidden;
+   
     
 }
-.card{
+.card-single{
+    width: 33.3333%;
     position: relative;
     background-color: red;
     height: 100%;
@@ -68,6 +70,28 @@
 
    
 }
+.Cardds-3:hover .buttondiv{
+    border-radius: 30px;
+    height: 12vh;
+    width: 20vw;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: center;
+    transition: 0.5s;
+}
+/* .buttondiv{
+    height: 10vh;
+    width: 20vw;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    
+    color: white;
+    justify-content: center;
+
+} */
 .img{
     position: absolute;
    left: 15%;
@@ -75,14 +99,14 @@
     overflow: hidden;
 
 }
-.card img{
+.card-single img{
     height: 80%;
     width: 80%;
     object-fit: cover;
     object-position: center;
 }
 
-.card1:hover img{
+.Cardds-1:hover img{
     transform: rotate(90deg);
     
     transition: 2s ease-in;
@@ -94,23 +118,23 @@
     display: flex;
     gap: 10px;
 }
-.card2:hover .photos{
+.Cardds-2:hover .photos{
     top: 30%;
     transition: 2s;
 
 }
-.card1{
+.Cardds-1{
 
     color: rgba(0, 0, 0, );
     background-image: url('https://cdn.pixabay.com/photo/2020/04/19/08/17/watercolor-5062356_1280.jpg');
 }
-.card2{
+.Cardds-2{
     display: flex;
     flex-direction:  column;
     border-radius: 0;
     background-image: url("https://c4.wallpaperflare.com/wallpaper/319/285/264/surface-background-texture-light-wallpaper-preview.jpg");
 }
-.card3{
+.Cardds-3{
     background-image: url('https://img.freepik.com/free-photo/pastel-blue-vignette-concrete-textured-background_53876-102637.jpg?w=996&t=st=1709048047~exp=1709048647~hmac=8da376beb89100d789da563fac483cc8edf89910b0d24c66cb0b4b6bfe284547');
 }
 .space{

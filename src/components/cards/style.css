@@ -8,7 +8,7 @@
     padding: 0 92px;
     background-color: black;
 }
-.cardcontainer{
+.carddcontainer{
     width: 50%;
     height: 50vh;
     display: flex;
@@ -20,7 +20,7 @@
     gap: 10px;
 }
 
-.cardcontainer .card{
+.carddcontainer .carddd{
     transition: 1s;
     cursor: pointer;
     width: 100%;
@@ -33,7 +33,7 @@
     font-size: 3vw;
 
 }
-.card2{
+.cardd2{
     cursor: pointer;
     font-size: 3vw;
     display: flex;

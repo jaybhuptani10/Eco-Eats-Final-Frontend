@@ -16,12 +16,12 @@ const Featured = () => {
       <div className="featured">
         <h1>Featured</h1>
       </div>
-      <div className="container">
-        <div className="cards">
+      <div className="containner">
+        <div className="cardds">
           <motion.div
             onHoverStart={() => handleHover(0)}
             onHoverEnd={() => handleHoverEnd(0)}
-            className="card"
+            className="carrd"
           >
             <h1 className="headings overflow-hidden">
               {" "}
@@ -45,7 +45,7 @@ const Featured = () => {
           <motion.div
             onHoverStart={() => handleHover(0)}
             onHoverEnd={() => handleHoverEnd(0)}
-            className="card"
+            className="carrd"
           >
             <h1 className="heading2">
               {"REUSE".split("").map((item, index) => (
