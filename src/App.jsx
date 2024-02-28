@@ -12,6 +12,7 @@ import Dashboard from "./Page/Dashboard/Dashboard";
 import Clothes from "./Page/clothes/Clothes";
 import Signup from "./Page/Login-Signup/Signup";
 import Login from "./Page/Login-Signup/Login";
+import Donate from "./Page/Forms/Donate";
 function App() {
   const locomotiveScroll = new LocomotiveScroll();
   const onTabChange = (tab) => {};
@@ -22,6 +23,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/Signup" element={<Signup />} />
         <Route path="/Login" element={<Login />} />
+        <Route path="/Donate" element={<Donate />} />
 
         <Route path="/E-waste" element={<Ewaste />} />
         <Route path="/Food-Waste" element={<Food />} />

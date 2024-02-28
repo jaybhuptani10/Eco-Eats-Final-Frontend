@@ -3,20 +3,19 @@ import { useNavigate } from "react-router-dom";
 import "./user.css";
 import { ToastContainer, toast } from "react-toastify";
 import Navbar from "../../components/navbar/Navbar";
-
-const User = () => {
-  const navigate = useNavigate();
-
+const Donate = () => {
   return (
     <div className="containerr">
       <Navbar />
       <div className="left">
-        <h1>Fill up the details to Recycle your E-waste</h1>
+        <h1 className="ok">Fill up the details to Donate Clothes and Food</h1>
       </div>
       <div className="formm">
         <form action="">
-          <input type="text" name="type" placeholder="E-waste type" id="" />
-
+          <select onClick={(e) => onSelect(e)} name="type" id="">
+            <option value="Food">Food</option>
+            <option value="Clothes">Clothes</option>
+          </select>
           <input
             className="inputt"
             type="datetime-local"
@@ -50,11 +49,13 @@ const User = () => {
             placeholder="Message to Recycler"
             id=""
           />
-          <button onClick={() => navigate("/Submit")}>Submit</button>
+          <button className="submitt" onClick={() => navigate("/Submit")}>
+            Submit
+          </button>
         </form>
       </div>
     </div>
   );
 };
 
-export default User;
+export default Donate;
