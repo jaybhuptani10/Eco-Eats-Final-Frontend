@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./dashboard.css";
 import Navbar from "../../components/navbar/Navbar";
-import Leftnav from "./Leftnav";
+
 import Hero from "./Hero";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
@@ -89,19 +89,19 @@ const Dashboard = () => {
       setTabFood(false);
       setTabClothes(false);
       setTabProfile(false);
-    } else if (e.target.innerText === "E-Waste") {
+    } else if (e.target.innerText === "New Requests") {
       setTabDashboard(false);
       setTabEwaste(true);
       setTabFood(false);
       setTabClothes(false);
       setTabProfile(false);
-    } else if (e.target.innerText === "Food Donation") {
+    } else if (e.target.innerText === "Accepted") {
       setTabDashboard(false);
       setTabEwaste(false);
       setTabFood(true);
       setTabClothes(false);
       setTabProfile(false);
-    } else if (e.target.innerText === "Clothes Donation") {
+    } else if (e.target.innerText === ">Pending") {
       setTabDashboard(false);
       setTabEwaste(false);
       setTabFood(false);
