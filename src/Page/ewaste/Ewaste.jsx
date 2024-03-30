@@ -9,9 +9,6 @@ import { useEffect } from "react";
 import Panel from "./Panel";
 import img from "./eco2.png";
 import { useGSAP } from "@gsap/react";
-import ScrollTrigger from "gsap/ScrollTrigger";
-
-import Formss from "./Formss";
 
 const Ewaste = () => {
   const comp = useRef(null);
@@ -44,7 +41,6 @@ const Ewaste = () => {
       <Navbar className=".enav"></Navbar>
       <div ref={comp} className="E-screen">
         <div className="E-hero">
-          <img src={img} alt="" />
           <h1>E-WASTE :</h1>
           <span>
             Recycle, Renew,<span className="n-line">Reclaim, Restore</span>{" "}

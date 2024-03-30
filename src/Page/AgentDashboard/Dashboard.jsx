@@ -9,11 +9,10 @@ import IMG from "./donation.png";
 import IMG2 from "./electro.png";
 import IMG3 from "./Food.png";
 import IMG4 from "./clothes.png";
-import Contribute from "./Contribute";
+
 import Profile from "./Profile";
-import ContributeFood from "./ContributeFood";
-import ContributeClothes from "./ContributeClothes";
-const Dashboard = () => {
+
+const ADashboard = () => {
   const navigate = useNavigate();
   // useEffect(() => {
   //   const token = localStorage.getItem("auth"); // Assuming you store the token in localStorage upon login
@@ -177,4 +176,4 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+export default ADashboard;

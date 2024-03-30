@@ -16,6 +16,7 @@ import Login from "./Page/Login-Signup/Login";
 import Logout from "./Page/Login-Signup/Logout";
 
 import Donate from "./Page/Forms/Donate";
+import ADashboard from "./Page/AgentDashboard/Dashboard";
 
 function App() {
   const locomotiveScroll = new LocomotiveScroll();
@@ -37,7 +38,8 @@ function App() {
         <Route path="/Clothes" element={<Clothes />} />
         <Route path="/Select" element={<Formselect />} />
         <Route path="/Dashboard" element={<Dashboard />} />
-        <Route path="/Logout" element={<Logout />} /> 
+        <Route path="/Logout" element={<Logout />} />
+        <Route path="/AgentDashboard" element={<ADashboard />} />
       </Routes>
     </BrowserRouter>
   );
