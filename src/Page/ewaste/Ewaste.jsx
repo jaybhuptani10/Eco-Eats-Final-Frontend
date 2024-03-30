@@ -5,10 +5,6 @@ import Navbar from "../../components/navbar/Navbar";
 import CardsContainer from "./CardsContainer";
 import HarmfullEffects from "./HarmfullEffects";
 import Solution from "./Solution"; // Import the Solution component
-import { useEffect } from "react";
-import Panel from "./Panel";
-import img from "./eco2.png";
-import { useGSAP } from "@gsap/react";
 
 const Ewaste = () => {
   const comp = useRef(null);
@@ -18,23 +14,6 @@ const Ewaste = () => {
     const buttonText = e.target.innerHTML;
     setButtonSelected(buttonText);
   };
-
-  useGSAP(
-    () => {
-      // gsap code here...
-      gsap.to(".panel-screen", {
-        scrollTrigger: {
-          trigger: ".panel-screen",
-          scroller: "body",
-          start: "top -10%",
-
-          end: "top -11%",
-          scrub: 1,
-        },
-      }); // <-- automatically reverted
-    },
-    { scope: comp }
-  );
 
   return (
     <>

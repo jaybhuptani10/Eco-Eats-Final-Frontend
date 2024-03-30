@@ -21,12 +21,9 @@
     
 
 }
-.E-hero img{
-    height: 30%;
-    width: 7%;
-}
+
 .E-hero h3{
-    font-size: 2vw;
+    font-size: clamp(2.5vw, 3vh, 4vw);
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .E-hero h1{
@@ -38,13 +35,13 @@
     "MORF" 15,
     "SHLN" 50;
     
-    font-size: 4.5vw;
+    font-size: clamp(5.5vw, 6vh, 12vw);
     color: #F84F39;
     font-weight:600;
     letter-spacing: 0.1vw;
 }
 .E-hero span{
-    font-size: 2.0vw;
+    font-size: clamp(2.5vw, 3vh, 4vw);
     
     color: black;
     font-family: "Noto Sans", sans-serif;
@@ -56,22 +53,23 @@
 }
 .butts{
     margin-top: 4vw;
-    width: 30%;
+    width: 60%;
     display: flex;
     justify-content: space-around;
+    
 }
 .divb{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 30%;
-    height: 3.5vw;
+    width: 250px;
+    height: clamp(20px, 7vh, 50px);
     border: 1px solid grey;
     border-radius: 9999px;
     cursor: pointer;
     font-weight: 600;
     transition: linear 0,5s;
-    font-size: 1.1vw;
+    font-size: clamp(1.2vw, 1.5vh, 2.5vw);
 }
 
 #a:hover{
@@ -91,6 +89,7 @@
     
 }
 .card-maindiv{
+   
     display: flex;
     justify-content: center;
     align-items: center;
@@ -100,12 +99,13 @@
 }
 
 .cards-container{
+    
     margin-top: 1vw;
     width: 90%;
     border: 1px solid grey;
     border-radius: 30px;
     overflow: hidden;
-    height: 80vh;
+    
     display: flex;
     gap: 10px;
     padding: 10px;
@@ -115,7 +115,7 @@
     overflow: hidden;
     border-radius: 30px;
     background-color: white;
-    height: 100%;
+ 
     width: 20%;
     display: flex;
     flex-direction: column;
@@ -158,7 +158,7 @@
     background-color: white;
     padding: 30px;
     overflow: hidden;
-    height: 100%;
+    height: 100vh;
     border-radius: 30px;
     width: 50%;
 }
@@ -171,16 +171,16 @@
     font-weight: 400;
 }
 .card-main h1{
-    font-size: 3vw;
+    font-size: clamp(2.5rem, 3vw, 4vw);
     font-weight: 500;
     margin-bottom: 2vw;
 }
 .card-main{
-    font-size: 1.2vw;
+    font-size: clamp(1.2vw, 1.5vh, 2.5vw);
 }
 
 .card-right{
-    height: 100%;
+    
     
     overflow: hidden;
     border-radius: 70px;
@@ -211,7 +211,109 @@
     width: 50%;
     background-color: blue;
 }
-@media screen and (max-width: 468px){
+@media(max-width: 468px){
+    .E-hero{
+        padding-top: 4vw;
+        width: 100%;
+        height: 20vh;
+        
+        
+        
     
+    }
+    
+    .card-maindiv{
+        margin-top: 5vw;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    .cards-container{
+        width: 100%;
+        min-height: 100vh;
+        gap: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-left{
+        height: 100%;
+        width: 100%;
+    }
+    .card-left .squares{
+        height: clamp(60px, 10vh, 80px);
+        
+    
+    }
+    .card-left .squares .square{
+    
+        
+        gap: 20px;
+        height: clamp(20px, 7vh, 50px);
+        border-radius: 20px;
+        width: clamp(20px, 7vh, 50px);
+        background-color: #F4F3FA;
+    }
+    .card-left .list{
+        text-align: center;
+    }
+    .card-left .list h1{
+        color: grey;
+    
+    }
+    .card-left .list ul li{
+        margin: 10px;
+        cursor: pointer;
+    
+        
+    }
+    .card-left .list ul li:hover{
+        background-color: #F3F3F7;
+    }
+    
+    .card-main{
+        background-color: white;
+        padding: 30px;
+        overflow: hidden;
+        height: 60vh;
+        border-radius: 30px;
+        width: 100%;
+    }
+    .card-main ul{
+        list-style: circle;
+        
+    }
+    .card-main ul li{
+        margin: 30px 0 ;
+        font-weight: 400;
+    }
+    
+    /* .card-main{
+        font-size: 1.2vw;
+    } */
+    
+    .card-right{
+        height: 50%;
+        text-align: center;
+        overflow: hidden;
+        border-radius: 70px;
+        width: 90%;
+        background-color: #F84F39;
+    }
+    .card-right img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    .panel-screen{
+        overflow: hidden;
+        border-radius: 60px;
+        height: 80vh;
+        width: 90vw;
+        background-color: #F3F2FA;
+        display: flex;
+        margin-top: 5vw;
+        
+        
+    }
     
 }
