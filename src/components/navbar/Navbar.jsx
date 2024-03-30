@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import "./style.css";
 import { useNavigate } from "react-router-dom";
 import img from "./eco2.png";
 import { CgProfile } from "react-icons/cg";
-
+import { CiMenuBurger } from "react-icons/ci";
+import { IoClose } from "react-icons/io5";
 const Navbar = () => {
+  const [menu, setMenu] = React.useState(false);
+  const [open, close] = useState(true);
+  const onMenuClick = () => {
+    setMenu(!menu);
+    close(!open);
+  };
   const navigate = useNavigate();
   const onNewLink = (e) => {
     const link = e.target.innerHTML;
@@ -32,8 +39,18 @@ const Navbar = () => {
           alt=""
         />
       </div>
+      {open == true ? (
+        <CiMenuBurger onClick={() => onMenuClick()} className="menu" />
+      ) : (
+        <IoClose
+          onClick={() => {
+            onMenuClick();
+          }}
+          className="menu"
+        />
+      )}
 
-      <div className="links">
+      <div className={`links ${menu ? "open" : ""}`}>
         {["E-Waste", "Food-Waste", "Clothes-Donation", "About"].map(
           (item, index) => (
             <a
@@ -47,12 +64,9 @@ const Navbar = () => {
             </a>
           )
         )}
-      </div>
 
-      <div className="login-signup">
-        <button onClick={() => navigate("/select")}>Contribute</button>
+        <CgProfile onClick={() => navigate("/Dashboard")} className="Profile" />
       </div>
-      <CgProfile onClick={() => navigate("/Dashboard")} className="Profile" />
     </div>
   );
 };

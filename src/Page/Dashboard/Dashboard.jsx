@@ -13,6 +13,7 @@ import Contribute from "./Contribute";
 import Profile from "./Profile";
 import ContributeFood from "./ContributeFood";
 import ContributeClothes from "./ContributeClothes";
+import Main from "./Main";
 const Dashboard = () => {
   const navigate = useNavigate();
   // useEffect(() => {
@@ -22,6 +23,7 @@ const Dashboard = () => {
   //     navigate("/Login");
   //   }
   // }, []);
+  const [touch, setTouch] = useState(false);
   const [main, setmain] = useState([
     {
       count: 3,
@@ -81,7 +83,15 @@ const Dashboard = () => {
   const [tabFood, setTabFood] = useState(false);
   const [tabClothes, setTabClothes] = useState(false);
   const [tabProfile, setTabProfile] = useState(false);
-
+  // useEffect(() => {
+  //   if (touch === true) {
+  //     setTabDashboard(false);
+  //     setTabEwaste(true);
+  //     setTabFood(false);
+  //     setTabClothes(false);
+  //     setTabProfile(false);
+  //   }
+  // });
   const onTabSelected = (e) => {
     if (e.target.innerText === "Dashboard") {
       setTabDashboard(true);
@@ -89,12 +99,14 @@ const Dashboard = () => {
       setTabFood(false);
       setTabClothes(false);
       setTabProfile(false);
+      setTouch(false);
     } else if (e.target.innerText === "E-Waste") {
       setTabDashboard(false);
       setTabEwaste(true);
       setTabFood(false);
       setTabClothes(false);
       setTabProfile(false);
+      setTouch(false);
     } else if (e.target.innerText === "Food Donation") {
       setTabDashboard(false);
       setTabEwaste(false);
@@ -163,7 +175,11 @@ const Dashboard = () => {
           </div>
         </div>
         <div className="right-dashboard">
-          {tabDashboard && <Hero data={main} />}
+          {tabDashboard && touch == true ? (
+            <Hero data={data} />
+          ) : (
+            tabDashboard && <Main data={main} setTouch={setTouch} />
+          )}
           {tabEwaste && <Contribute />}
           {tabFood && <ContributeFood />}
           {tabClothes && <ContributeClothes />}

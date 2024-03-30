@@ -22,7 +22,7 @@ const Hero = ({ data }) => {
           <motion.div
             key={index}
             whileHover={{ scale: 1.1 }}
-            transition={{ duration: 0.5 }}
+            // transition={{ duration: 0.5 }}
             layoutId={index}
             onClick={() => handleOpenModal(index)} // Pass the index to identify which modal to open
             className="card-dashboard"

@@ -4,19 +4,35 @@
     background-color: black;
     display: flex;
 }
-.first{
+.first-text{
     width: 40%;
+    
 }
 .second{
     width: 50%;
 }
 
-.first>h1{
+.first-text h1{
+    
+    margin-top: 20px;
     margin-bottom: -42px;
-    font-size: 7vw;
+    font-size: clamp(1rem, 3vw, 3rem);
     font-weight: 800;
 }
 .second p{
-    font-size: 1.5vw;
+    margin-top: 20px;
+    font-size: clamp(0.7rem, 1.5vw, 2rem);
     letter-spacing: 0.07vw;
+}
+@media screen and (max-width: 768px){
+    .main-footer{
+        flex-direction: column;
+        gap: 10vw;
+    }
+    .first{
+        width: 100%;
+    }
+    .second{
+        width: 100%;
+    }
 }

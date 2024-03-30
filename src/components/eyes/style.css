@@ -24,8 +24,8 @@
     transform: translate(-50%,-50%);
 }
 .eye{
-    width: 15vw;
-    height: 15vw;
+    width: clamp(10vw, 15vw, 20vw);
+    height: clamp(10vw, 15vw, 20vw);
     background-color: rgb(254, 255, 254);
     border-radius: 50%;
     display: flex;

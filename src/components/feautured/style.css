@@ -66,3 +66,18 @@
     object-fit: cover;
     object-position: center;
 }
+@media screen and (max-width: 768px){
+    .cardds{
+        flex-direction: column;
+    }
+    .carrd{
+        width: 100%;
+        height: 50vh;
+    }
+    .headings{
+        font-size: 5vw;
+    }
+    .heading2{
+        font-size: 5vw;
+    }
+}

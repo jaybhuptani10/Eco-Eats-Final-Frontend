@@ -18,7 +18,7 @@
   line-height: 5.5vw;
   letter-spacing: -0.025em;
   font-weight: 900;
-  font-size: 7vw;
+  font-size: clamp(3rem, 7vw, 7rem);
 }
 .inside {
   width: fit-content;
@@ -52,7 +52,8 @@
   line-height: 1px;
 }
 .text {
-  padding: 5px 10px;
+  padding: 5px;
+  font-size: clamp(0.7rem, 1.5vw, 2rem);
   border: 2px solid white;
   border-radius: 9999px;
 }
@@ -87,22 +88,20 @@
   font-size: 1.5vw;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     .Main{
       height: 40%;
     }
+    .masker h1{
+      line-height: clamp(2.5rem, 3vw, 5rem);
+    }
     .textStructure{
-        margin-top: 30vw;
+        margin-top: 15vw;
     }
     .line p{
         font-size: 3vw;
     }
-    .text{
-        height: 8.6vw;
-        width: 16vw;
-        font-size: 2.4vw;
-        
-    }
+    
     .circle{
         height: 8vw;
         width: 8vw;

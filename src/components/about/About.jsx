@@ -1,5 +1,8 @@
 import React from "react";
 import "./style.css";
+import { FaInstagram } from "react-icons/fa";
+import { FaDiscord } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa";
 export default function About() {
   return (
     <>
@@ -23,17 +26,19 @@ export default function About() {
               informative articles, practical tips, and resources to minimize
               waste and maximize environmental stewardship
             </h1>
-            <h1>
-              Join a community dedicated to fostering sustainable practices and
-              making a positive impact on our planet.
-            </h1>
           </div>
           <div className="links">
             <h1>Links:</h1>
             <div className="list">
-              <p>Instagram</p>
-              <p>Facebook</p>
-              <p>Linkedin</p>
+              <p>
+                Instagram <FaInstagram />{" "}
+              </p>
+              <p>
+                Discord <FaDiscord />
+              </p>
+              <p>
+                Linkedin <FaLinkedin />
+              </p>
             </div>
           </div>
         </div>

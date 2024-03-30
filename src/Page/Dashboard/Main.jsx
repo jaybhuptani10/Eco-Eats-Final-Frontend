@@ -3,12 +3,16 @@ import { motion, AnimatePresence } from "framer-motion";
 import { AiFillSkin } from "react-icons/ai";
 import "./dashboard.css";
 import Modal from "./Modal";
+import Try from "./Try";
+import PlotlyComponent from "./PlotlyComponent";
 
-const Hero = ({ data }) => {
+const Main = ({ data, setTouch }) => {
   const [selectedId, setSelectedId] = useState(null); // Change to null to indicate no modal is open
 
   const handleOpenModal = (index) => {
-    setSelectedId(index);
+    // if (index == 1) {
+    // }
+    index != 0 && setTouch(index);
   };
 
   const handleCloseModal = () => {
@@ -38,8 +42,9 @@ const Hero = ({ data }) => {
       <AnimatePresence>
         {selectedId !== null && <Modal onClose={handleCloseModal} />}
       </AnimatePresence>
+      <Try />
     </motion.div>
   );
 };
 
-export default Hero;
+export default Main;

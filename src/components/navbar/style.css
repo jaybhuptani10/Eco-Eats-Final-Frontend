@@ -10,16 +10,27 @@
 
 }
 .nav .logo{
-    height: 10%;
-    width: 105;
+    
     cursor: pointer;
 }
 .logo img{
-    height: 10%;
-    width: 10%;
+    height: clamp(70px, 8vw,100px);
+    width: clamp(70px, 8vw,100px);
     object-fit: contain;
     object-position: center;
     
+}
+.links{
+    display: flex;
+    gap: 20px; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+.a-link{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+    font-size: clamp(12px, 1.2vw, 20px);
 }
 .a-link:hover{
     border-bottom: 1px solid orangered;
@@ -27,35 +38,12 @@
 .nav-black{
     color: black;
 }
-.a-link{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    cursor: pointer;
-   
-}
-.links{
-    display: flex;
-    gap: 20px;
-    
-    
-    
-}
-.login-signup button{
-    
-    border: 1px solid rgb(255, 255, 255);
-    color: rgb(255, 255, 255);
-    width: 8vw;
-    border-radius: 0px;
-}
-.login-signup button:hover{
-    
-    transition: 0.5s ease-in-out;
-    background-color: rgb(255, 255, 255);
-    color: black;
 
-}
+
+
 .Profile{
-    height: 7%;
-    width: 2.5%;
+    height: clamp(20px, 4vw,40px);
+    width: clamp(20px, 4vw,40px);
     cursor: pointer;
     overflow: hidden;
 }
@@ -65,10 +53,30 @@
     transition: 0.5s ease-in-out;
 
 }
+.nav .menu{
+    display: none;
+    cursor: pointer;
+}
+/* nav .menu{
+    position: absolute;
+    top: 0.75rem;
+    right: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2.25rem;
+    height: 2rem;
+}
+
+nav .menu span{
+    height: 0.4rem;
+    width: 100%;
+    background-color: white;
+    border-radius: 0.2rem;
+} */
 
 
-
-@media (max-width:600px) {
+/* @media (max-width:600px) {
     .nav{
         flex-direction: column;
         font-size: 3vw;
@@ -76,5 +84,56 @@
     .logo{
         font-size: 1vw;
     }
-    
+     */
+/* } */
+
+@media(max-width:480px){
+    .nav .logo{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav{
+        position: relative;
+        padding: 0px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav .menu{
+        position: absolute;
+        display: block;
+        font-size: clamp(18px, 1.2vw, 25px);
+       color: rgb(255, 255, 255);
+       right: 10px;
+       top: 10px;
+        z-index: 1;
+    }
+    .nav{
+        flex-direction: column;
+        align-items: start;
+    }
+    .nav .links{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 0.25rem;
+
+    }
+    .nav .links .a-links{
+        width: 100%;
+        text-align: center;
+        margin: 0.2rem 0.5rem;
+        border-bottom:1px solid black;
+
+    }
+    .nav .open{
+        z-index: 0;
+       
+        color: rgb(255, 255, 255);
+        text-align: center;
+        display: flex;
+    }
 }
