@@ -10,17 +10,17 @@ const app = express();
 
 app.use(express.json());
 
-app.use(cors({origin: "https://eco-eats-delta.vercel.app",
-methods:["GET","POST"],
-credentials:true}))
+app.use(cors())
 app.use("/api",mainRouter);
 
-
+const port = process.env.PORT || 3000;
 
 const start = async() =>{
     try{
         await connectDB(process.env.MONGO_URI);
-        
+        app.listen(port,()=>{
+            console.log(`server on ${port}`);
+        })
     } catch(error){
         console.log(error);
     }

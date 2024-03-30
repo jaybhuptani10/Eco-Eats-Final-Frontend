@@ -35,7 +35,7 @@ const Signup = () => {
         };
         try {
           const response = await axios.post(
-            "https://eco-eats-delta.vercel.app/api/register",
+            "http://localhost:3000/api/register",
             formData
           );
           console.log("Registration successfull");

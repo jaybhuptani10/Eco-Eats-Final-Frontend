@@ -41,7 +41,7 @@ const Ewaste = () => {
 
   return (
     <>
-      <Navbar></Navbar>
+      <Navbar className=".enav"></Navbar>
       <div ref={comp} className="E-screen">
         <div className="E-hero">
           <img src={img} alt="" />

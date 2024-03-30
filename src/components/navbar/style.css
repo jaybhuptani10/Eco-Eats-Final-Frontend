@@ -24,13 +24,18 @@
 .a-link:hover{
     border-bottom: 1px solid orangered;
 }
+.nav-black{
+    color: black;
+}
 .a-link{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     cursor: pointer;
+   
 }
 .links{
     display: flex;
     gap: 20px;
+    
     
     
 }

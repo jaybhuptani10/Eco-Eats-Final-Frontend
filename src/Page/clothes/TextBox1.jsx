@@ -4,17 +4,9 @@ const TextBox1 = () => {
   return (
     <div className="Text-Box">
       <h1>How to Donate</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, error
-        accusantium. Deleniti inventore eaque ab libero eligendi laudantium
-        consequuntur reprehenderit optio impedit sed sint tempora nemo, aliquid
-        excepturi veniam?
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nesciunt
-        alias, iste aperiam assumenda blanditiis porro at tempore tempora
-        dignissimos!
-      </p>
+      <p>Step 1 - Login to your account or sign up if you don't have one.</p>
+      <p>Step 2 - Fill up the form to donate your clothes and submit it.</p>
+      <p>Step 3 - Wait.........</p>
     </div>
   );
 };

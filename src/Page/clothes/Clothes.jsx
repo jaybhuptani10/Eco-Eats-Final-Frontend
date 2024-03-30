@@ -1,5 +1,6 @@
 import React from "react";
 import "./clothes.css";
+import { motion } from "framer-motion";
 import Navbar from "../../components/navbar/Navbar";
 import IMG from "./c1.png";
 import IMG2 from "./sun.png";
@@ -37,7 +38,7 @@ const Clothes = () => {
     }
   };
   return (
-    <div className="Clothes-Page">
+    <motion.div className="Clothes-Page">
       <Navbar className="nav" />
       <div className="Page-1">
         <div className="heading-text">
@@ -102,7 +103,7 @@ const Clothes = () => {
           <TextBox3 />
         )}
       </div>
-    </div>
+    </motion.div>
   );
 };
 

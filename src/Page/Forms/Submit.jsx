@@ -12,21 +12,20 @@ const Submit = () => {
       <div className="left-card">
         <h1>Form Submitted!!!!</h1>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum,
-          earum?
+          Thanks for fillup the form. We will contact you soon. Please check
         </p>
         <ul>
           <li>
             <TiTick className="icons" />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, unde!
+            Planet Protection
           </li>
           <li>
             <TiTick className="icons" />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, unde!
+            Climate Protection
           </li>
           <li>
             <TiTick className="icons" />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, unde!
+            Waste Reduction
           </li>
         </ul>
         <button onClick={() => navigate("/")} className="continue">

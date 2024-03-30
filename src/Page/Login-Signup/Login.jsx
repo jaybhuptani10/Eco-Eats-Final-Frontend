@@ -30,7 +30,7 @@ const Login = () => {
 
       try {
         const response = await axios.post(
-          "https://eco-eats-delta.vercel.app/api/login",
+          "http://localhost:3000/api/login",
           formData
         );
         localStorage.setItem("auth", JSON.stringify(response.data.token));

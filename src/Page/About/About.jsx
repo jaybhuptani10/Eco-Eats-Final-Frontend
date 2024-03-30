@@ -3,7 +3,7 @@ import "./style.css";
 import Navbar from "../../components/navbar/Navbar";
 const About = () => {
   return (
-    <div className="f">
+    <div className="">
       <Navbar></Navbar>
       <div className="body">
         <h3>
@@ -17,9 +17,6 @@ const About = () => {
         </h1>
         <h1>
           Vidhan Prajapti <div className="user">Back-End Developer</div>
-        </h1>
-        <h1>
-          Stavan Mehta <div className="user">Back-End Developer</div>
         </h1>
       </div>
     </div>

@@ -5,20 +5,73 @@ import Leftnav from "./Leftnav";
 import Hero from "./Hero";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-
+import IMG from "./donation.png";
+import IMG2 from "./electro.png";
+import IMG3 from "./Food.png";
+import IMG4 from "./clothes.png";
+import Contribute from "./Contribute";
+import Profile from "./Profile";
 const Dashboard = () => {
   const navigate = useNavigate();
-  useEffect(() => {
-    const token = localStorage.getItem("auth"); // Assuming you store the token in localStorage upon login
-  
-    if (!token) {
-      navigate("/Login");
-    }
-  }, []);
+  // useEffect(() => {
+  //   const token = localStorage.getItem("auth"); // Assuming you store the token in localStorage upon login
+
+  //   if (!token) {
+  //     navigate("/Login");
+  //   }
+  // }, []);
+  const [main, setmain] = useState([
+    {
+      count: 3,
+      name: "Total Donations",
+      img: IMG,
+    },
+
+    {
+      count: 1,
+      name: "E-waste Donations",
+      img: IMG2,
+    },
+    {
+      count: 1,
+      name: "Food Donations",
+      img: IMG3,
+    },
+    {
+      count: 1,
+      name: "Cloths Donations",
+      img: IMG4,
+    },
+  ]);
+  const [ewaste, setewaste] = useState([
+    {
+      Name: "Batteries",
+      Quantity: 2,
+      Address: "Delhi",
+      Pickup: "27 January 2023",
+      time: "10:00 AM",
+      msg: "Batteries are harmful for the environment, please dispose them properly",
+    },
+  ]);
   const [data, setData] = useState([
-    { name: "Rahul", age: 23, address: "Delhi", phone: "1234567890" },
-    { name: "Sita", age: 25, address: "Mumbai", phone: "9876543210" },
-    { name: "Gita", age: 22, address: "Bangalore", phone: "1234567890" },
+    {
+      Type: "E-waste",
+      "Pickup Time": "27 January 2023",
+      address: "Delhi",
+      phone: "1234567890",
+    },
+    {
+      Type: "Food DOnation",
+      "Pickup Time": "28 January 2023",
+      address: "Delhi",
+      phone: "1264567890",
+    },
+    {
+      Type: "Clothes Donation",
+      "Pickup Time": "20 January 2023",
+      address: "Ahmeabad",
+      phone: "1264567890",
+    },
     // ... add more data objects here
   ]);
   const [tabDashboard, setTabDashboard] = useState(true);
@@ -108,9 +161,12 @@ const Dashboard = () => {
           </div>
         </div>
         <div className="right-dashboard">
-          {data.map((item, index) => (
-            <Hero key={index} data={item} />
-          ))}
+          {tabDashboard && <Hero data={main} />}
+          {tabEwaste && <Contribute />}
+          {/*{tabFood && <Hero data={data} />}
+          {tabClothes && <Hero data={data} />}
+          {tabProfile && <Hero data={data} />} */}
+          {tabProfile && <Profile />}
         </div>
       </div>
     </div>

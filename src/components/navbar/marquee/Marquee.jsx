@@ -16,21 +16,21 @@ function Marquee() {
           animate={{ x: "-100%" }}
           transition={{ ease: "linear", repeat: Infinity, duration: 10 }}
         >
-          We are AntiWaste
+          EcoEats
         </motion.h1>
         <motion.h1
           initial={{ x: 0 }}
           animate={{ x: "-100%" }}
           transition={{ ease: "linear", repeat: Infinity, duration: 10 }}
         >
-          We are AntiWaste
+          EcoEats
         </motion.h1>
         <motion.h1
           initial={{ x: 0 }}
           animate={{ x: "-100%" }}
           transition={{ ease: "linear", repeat: Infinity, duration: 10 }}
         >
-          We are AntiWaste
+          EcoEats
         </motion.h1>
       </div>
     </div>

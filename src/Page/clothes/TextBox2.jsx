@@ -5,15 +5,23 @@ const TextBox2 = () => {
     <div className="Text-Box">
       <h1>What EcoEats do</h1>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, error
-        accusantium. Deleniti inventore eaque ab libero eligendi laudantium
-        consequuntur reprehenderit optio impedit sed sint tempora nemo, aliquid
-        excepturi veniam?
+        EcoEats is revolutionizing the way we donate clothes through its
+        innovative web app platform. Dedicated to sustainability and social
+        responsibility, EcoEats facilitates the seamless donation of clothing to
+        NGOs, ensuring that unwanted garments find new homes and purposes.
       </p>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nesciunt
-        alias, iste aperiam assumenda blanditiis porro at tempore tempora
-        dignissimos!
+        With a user-friendly interface, individuals can easily schedule pickups
+        for their homes, making the process convenient and accessible.
+      </p>
+      <p>
+        By partnering with trusted NGOs, EcoEats ensures that every contribution
+        makes a meaningful impact in communities in need.
+      </p>
+      <p>
+        Together, we're not only reducing textile waste but also supporting
+        those who can benefit most from gently used clothing. Join us in making
+        a difference, one donation at a time.
       </p>
     </div>
   );

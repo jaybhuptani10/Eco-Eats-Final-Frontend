@@ -212,11 +212,16 @@
 }
 .Text-Box{
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 50%;
     padding-right: 100px;
+}
+.Text-Box h2{
+    line-height: 1.9vw;
+    font-weight: 700;
+    font-size: clamp(1.5rem, 1vw, 4rem);
 }
 .Text-Box h1{
 
@@ -231,4 +236,7 @@
     color: #000000;
     font-weight: 400;
     margin-bottom: 20px;
+}
+p{
+    font-size: clamp(1rem, 1.4vw, 2.6rem);
 }
