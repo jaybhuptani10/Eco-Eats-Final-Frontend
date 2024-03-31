@@ -21,8 +21,6 @@ const Navbar = () => {
     // Check if current location is home page, set navblack accordingly
     if (location.pathname === "/") {
       setNavBlack(false);
-    } else if (location.pathname === "/Food-Waste") {
-      setNavBlack(false);
     } else {
       setNavBlack(true);
     }
