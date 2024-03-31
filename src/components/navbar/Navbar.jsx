@@ -21,6 +21,19 @@ const Navbar = () => {
     // Check if current location is home page, set navblack accordingly
     if (location.pathname === "/") {
       setNavBlack(false);
+    } else if (location.pathname === "/Dashboard") {
+      setNavBlack(false);
+
+      if (window.innerWidth < 800) {
+        // Replace 800 with your desired value
+        setNavBlack(true);
+      }
+    } else if (location.pathname === "/About") {
+      setNavBlack(false);
+      if (window.innerWidth < 800) {
+        // Replace 800 with your desired value
+        setNavBlack(true);
+      }
     } else {
       setNavBlack(true);
     }

@@ -20,7 +20,7 @@ const Main = ({ data, setTouch }) => {
   };
 
   return (
-    <motion.div className="cards">
+    <motion.div className="carddss">
       {data.map((item, index) => {
         return (
           <motion.div
@@ -29,20 +29,18 @@ const Main = ({ data, setTouch }) => {
             // transition={{ duration: 0.5 }}
             layoutId={index}
             onClick={() => handleOpenModal(index)} // Pass the index to identify which modal to open
-            className="card-dashboard"
+            className="card-dashboardd"
           >
-            <motion.div className="content">
-              <img src={item.img} alt="" />
-              <p>{item.count}</p>
-              <h1>{item.name}</h1>
-            </motion.div>
+            <img src={item.img} alt="" />
+            <p>{item.count}</p>
+            <h1>{item.name}</h1>
           </motion.div>
         );
       })}
       <AnimatePresence>
         {selectedId !== null && <Modal onClose={handleCloseModal} />}
       </AnimatePresence>
-      <Try />
+      {/* <Try /> */}
     </motion.div>
   );
 };

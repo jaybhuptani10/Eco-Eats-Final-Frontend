@@ -132,49 +132,49 @@ const Dashboard = () => {
     <div className="profile">
       <Navbar />
       <div className="Dashboard">
-        <div className="left-nav">
+        <div className="left-navi">
           <div
             onClick={(e) => onTabSelected(e)}
-            className={` Dashboard-item ${
+            className={` Dashboardd-item ${
               tabDashboard === true && "Dashboard-item-selected"
             } `}
           >
-            Dashboard
+            <h1>Dashboard</h1>
           </div>
           <div
             onClick={(e) => onTabSelected(e)}
-            className={` Dashboard-item ${
+            className={` Dashboardd-item ${
               tabEwaste === true && "Dashboard-item-selected"
             } `}
           >
-            E-Waste
+            <h1>E-Waste</h1>
           </div>
           <div
             onClick={(e) => onTabSelected(e)}
-            className={` Dashboard-item ${
+            className={` Dashboardd-item ${
               tabFood === true && "Dashboard-item-selected"
             } `}
           >
-            Food Donation
+            <h1>Food Donation</h1>
           </div>
           <div
             onClick={(e) => onTabSelected(e)}
-            className={` Dashboard-item ${
+            className={` Dashboardd-item ${
               tabClothes === true && "Dashboard-item-selected"
             } `}
           >
-            Clothes Donation
+            <h1>Clothes Donation</h1>
           </div>
           <div
             onClick={(e) => onTabSelected(e)}
-            className={` Dashboard-item ${
+            className={` Dashboardd-item ${
               tabProfile === true && "Dashboard-item-selected"
             } `}
           >
-            Profile
+            <h1>Profile</h1>
           </div>
         </div>
-        <div className="right-dashboard">
+        <div className="right-dashboardd">
           {tabDashboard && touch == true ? (
             <Hero data={data} />
           ) : (

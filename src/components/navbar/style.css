@@ -46,8 +46,8 @@
 
 
 .Profile{
-    height: clamp(20px, 4vw,40px);
-    width: clamp(20px, 4vw,40px);
+    height: clamp(30px, 4vw,40px);
+    width: clamp(30px, 4vw,40px);
     cursor: pointer;
     overflow: hidden;
 }
@@ -109,10 +109,10 @@ nav .menu span{
     .nav .menu{
         position: absolute;
         display: block;
-        font-size: clamp(18px, 1.2vw, 25px);
+        font-size: clamp(25px, 1.2vw, 25px);
        color: rgb(255, 255, 255);
        right: 10px;
-       top: 10px;
+       top: 20px;
         z-index: 1;
     }
     .nav .black{

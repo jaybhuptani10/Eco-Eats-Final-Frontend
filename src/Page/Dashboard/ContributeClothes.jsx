@@ -12,7 +12,7 @@ const ContributeClothes = () => {
   };
   return (
     <div className="Contribute">
-      <form action="">
+      <form className="forms" action="">
         <label htmlFor="Hy">
           Clothes description
           <input

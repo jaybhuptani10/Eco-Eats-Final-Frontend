@@ -12,7 +12,7 @@ const ContributeFood = () => {
   };
   return (
     <div className="Contribute">
-      <form action="">
+      <form className="forms" action="">
         <label htmlFor="Hy">
           Food Description
           <input

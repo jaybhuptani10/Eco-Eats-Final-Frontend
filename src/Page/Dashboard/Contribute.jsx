@@ -12,7 +12,7 @@ const Contribute = () => {
   };
   return (
     <div className="Contribute">
-      <form action="">
+      <form className="forms" action="">
         <label htmlFor="Hy">
           E-Waste Type
           <input
