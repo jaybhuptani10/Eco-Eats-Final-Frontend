@@ -70,6 +70,7 @@
 
    
 }
+
 .Cardds-3:hover .buttondiv{
     border-radius: 30px;
     height: 12vh;
@@ -99,6 +100,7 @@
     overflow: hidden;
 
 }
+
 .card-single img{
     height: 80%;
     width: 80%;
@@ -142,7 +144,7 @@
     width: 100%;
 }
 .about-donation{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background-image: url('https://plus.unsplash.com/premium_photo-1669392157886-f4e298c8ec6b?q=80&w=2022&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     background-position: center;
@@ -151,7 +153,7 @@
 
 }
 .option h1{
-    font-size: clamp(1.5rem, 1.5vw, 2rem);
+    font-size: clamp(1rem, 1.5vw, 2rem);
     color: #000000;
     font-weight: 900;
 
@@ -159,8 +161,8 @@
 .option{
     
     border-radius: 50px;
-    width: 18vw;
-    height: 6vw;
+    width: clamp(10rem, 14vw, 20rem);
+    height: clamp(3rem, 4vw, 7rem);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -170,10 +172,12 @@
 }
 .activeoption{
     background-color: black;
+    z-index:100;
    
 }
 .activeoption h1{
     color: white;
+    font-weight: 700;
 }
 .option:hover{
     background-color: #000000;
@@ -219,9 +223,9 @@
     padding-right: 100px;
 }
 .Text-Box h2{
-    line-height: 1.9vw;
+    line-height: clamp(1.5rem, 2.1vw, 4rem);
     font-weight: 700;
-    font-size: clamp(1.5rem, 1vw, 4rem);
+    font-size: clamp(1rem, 1vw, 4rem);
 }
 .Text-Box h1{
 
@@ -232,11 +236,50 @@
     margin-bottom: 20px;
 }
 .Text-Box p{
-    font-size: clamp(1rem, 1vw, 2rem);
+    font-size: clamp(0.8rem, 1vw, 2rem);
     color: #000000;
     font-weight: 400;
     margin-bottom: 20px;
 }
 p{
     font-size: clamp(1rem, 1.4vw, 2.6rem);
+}
+
+@media(max-width:500px){
+    .cards-collection{
+        flex-direction: column;
+    }
+    .card-single{
+        width: 100%;
+    }
+    .img{
+        left: 32%;
+       
+    }
+    .card-single img{
+        height: 50%;
+        width: 50%;
+        object-fit: cover;
+        object-position: center;
+    }
+    .photos{
+        top: -130%;
+    }
+    .Cardds-3:hover .buttondiv{
+        width: 70vw;
+    }
+    .option2{
+        top: 14%;
+
+    }
+    .option3{
+        top: 20%;
+    }
+    .Text-Box{
+        overflow: hidden;
+        width: 90%;
+    }
+    .about-donation{
+        height: 15  0vh;
+    }
 }

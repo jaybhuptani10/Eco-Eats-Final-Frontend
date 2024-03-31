@@ -69,7 +69,7 @@ const Clothes = () => {
           <h1>Clothes</h1>
         </div>
         <div className="Cardds-3 card-single">
-          <div onClick={() => navigate("/Donate")} className="buttondiv">
+          <div onClick={() => navigate("/Dashboard")} className="buttondiv">
             Now
           </div>
         </div>
