@@ -16,7 +16,7 @@ const Hero = ({ data }) => {
   };
 
   return (
-    <motion.div className="cards">
+    <motion.div className="carddss">
       {data.map((item, index) => {
         return (
           <motion.div
@@ -25,13 +25,10 @@ const Hero = ({ data }) => {
             // transition={{ duration: 0.5 }}
             layoutId={index}
             onClick={() => handleOpenModal(index)} // Pass the index to identify which modal to open
-            className="card-dashboard"
+            className="card-dashboardd"
           >
-            <motion.div className="content">
-              <img src={item.img} alt="" />
-              <p>{item.count}</p>
-              <h1>{item.name}</h1>
-            </motion.div>
+            <p>{item.Type}</p>
+            <h1>{item.address}</h1>
           </motion.div>
         );
       })}

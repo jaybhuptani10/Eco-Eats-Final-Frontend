@@ -27,9 +27,8 @@ const Hero = ({ data }) => {
             onClick={() => handleOpenModal(index)} // Pass the index to identify which modal to open
             className="card-dashboardd"
           >
-            <img src={item.img} alt="" />
-            <p>{item.count}</p>
-            <h1>{item.name}</h1>
+            <p>{item.Type}</p>
+            <h1>{item.address}</h1>
           </motion.div>
         );
       })}

@@ -34,6 +34,12 @@ const Navbar = () => {
         // Replace 800 with your desired value
         setNavBlack(true);
       }
+    } else if (location.pathname === "/AgentDashboard") {
+      setNavBlack(false);
+      if (window.innerWidth < 800) {
+        // Replace 800 with your desired value
+        setNavBlack(true);
+      }
     } else {
       setNavBlack(true);
     }

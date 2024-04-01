@@ -7,13 +7,13 @@ const Leftnav = () => {
         <h1>Dashboard</h1>
       </div>
       <div className="Dashboard-items">
-        <h1>New Requests</h1>
+        <h1>E-waste</h1>
       </div>
       <div className="Dashboard-items">
-        <h1>Accepted</h1>
+        <h1>Food DOnation</h1>
       </div>
       <div className="Dashboard-items">
-        <h1>Rejected</h1>
+        <h1>Clothes DOnation</h1>
       </div>
       <div className="Dashboard-items">
         <h1>Profile</h1>

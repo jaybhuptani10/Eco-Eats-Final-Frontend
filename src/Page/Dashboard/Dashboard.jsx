@@ -15,15 +15,8 @@ import ContributeFood from "./ContributeFood";
 import ContributeClothes from "./ContributeClothes";
 import Main from "./Main";
 const Dashboard = () => {
-  const navigate = useNavigate();
-  // useEffect(() => {
-  //   const token = localStorage.getItem("auth"); // Assuming you store the token in localStorage upon login
-
-  //   if (!token) {
-  //     navigate("/Login");
-  //   }
-  // }, []);
-  const [touch, setTouch] = useState(false);
+  const [touch, setTouch] = useState(0);
+  const [data, setData] = useState(false);
   const [main, setmain] = useState([
     {
       count: 3,
@@ -47,37 +40,31 @@ const Dashboard = () => {
       img: IMG4,
     },
   ]);
-  const [ewaste, setewaste] = useState([
-    {
-      Name: "Batteries",
-      Quantity: 2,
-      Address: "Delhi",
-      Pickup: "27 January 2023",
-      time: "10:00 AM",
-      msg: "Batteries are harmful for the environment, please dispose them properly",
-    },
-  ]);
-  const [data, setData] = useState([
+
+  const Ewaste = [
     {
       Type: "E-waste",
       "Pickup Time": "27 January 2023",
       address: "Delhi",
       phone: "1234567890",
     },
+  ];
+  const Food = [
     {
       Type: "Food DOnation",
       "Pickup Time": "28 January 2023",
       address: "Delhi",
       phone: "1264567890",
     },
+  ];
+  const Clothes = [
     {
       Type: "Clothes Donation",
       "Pickup Time": "20 January 2023",
       address: "Ahmeabad",
       phone: "1264567890",
     },
-    // ... add more data objects here
-  ]);
+  ];
   const [tabDashboard, setTabDashboard] = useState(true);
   const [tabEwaste, setTabEwaste] = useState(false);
   const [tabFood, setTabFood] = useState(false);
@@ -99,32 +86,35 @@ const Dashboard = () => {
       setTabFood(false);
       setTabClothes(false);
       setTabProfile(false);
-      setTouch(false);
+      setTouch(0); // Reset touch to 0 when clicking on "Dashboard"
     } else if (e.target.innerText === "E-Waste") {
       setTabDashboard(false);
       setTabEwaste(true);
       setTabFood(false);
       setTabClothes(false);
       setTabProfile(false);
-      setTouch(false);
+      setTouch(1); // Set touch to 1 when clicking on "E-Waste"
     } else if (e.target.innerText === "Food Donation") {
       setTabDashboard(false);
       setTabEwaste(false);
       setTabFood(true);
       setTabClothes(false);
       setTabProfile(false);
+      setTouch(2); // Set touch to 2 when clicking on "Food Donation"
     } else if (e.target.innerText === "Clothes Donation") {
       setTabDashboard(false);
       setTabEwaste(false);
       setTabFood(false);
       setTabClothes(true);
       setTabProfile(false);
+      setTouch(3); // Set touch to 3 when clicking on "Clothes Donation"
     } else if (e.target.innerText === "Profile") {
       setTabDashboard(false);
       setTabEwaste(false);
       setTabFood(false);
       setTabClothes(false);
       setTabProfile(true);
+      setTouch(0); // Reset touch to 0 when clicking on "Profile"
     }
   };
 
@@ -136,7 +126,7 @@ const Dashboard = () => {
           <div
             onClick={(e) => onTabSelected(e)}
             className={` Dashboardd-item ${
-              tabDashboard === true && "Dashboard-item-selected"
+              tabDashboard === true && "Dashboardd-item-selected"
             } `}
           >
             <h1>Dashboard</h1>
@@ -144,7 +134,7 @@ const Dashboard = () => {
           <div
             onClick={(e) => onTabSelected(e)}
             className={` Dashboardd-item ${
-              tabEwaste === true && "Dashboard-item-selected"
+              tabEwaste === true && "Dashboardd-item-selected"
             } `}
           >
             <h1>E-Waste</h1>
@@ -152,7 +142,7 @@ const Dashboard = () => {
           <div
             onClick={(e) => onTabSelected(e)}
             className={` Dashboardd-item ${
-              tabFood === true && "Dashboard-item-selected"
+              tabFood === true && "Dashboardd-item-selected"
             } `}
           >
             <h1>Food Donation</h1>
@@ -160,7 +150,7 @@ const Dashboard = () => {
           <div
             onClick={(e) => onTabSelected(e)}
             className={` Dashboardd-item ${
-              tabClothes === true && "Dashboard-item-selected"
+              tabClothes === true && "Dashboardd-item-selected"
             } `}
           >
             <h1>Clothes Donation</h1>
@@ -168,24 +158,29 @@ const Dashboard = () => {
           <div
             onClick={(e) => onTabSelected(e)}
             className={` Dashboardd-item ${
-              tabProfile === true && "Dashboard-item-selected"
+              tabProfile === true && "Dashboardd-item-selected"
             } `}
           >
             <h1>Profile</h1>
           </div>
         </div>
         <div className="right-dashboardd">
-          {tabDashboard && touch == true ? (
-            <Hero data={data} />
+          {tabDashboard && touch === 1 ? (
+            <Hero data={Ewaste} />
+          ) : tabDashboard && touch === 2 ? (
+            <Hero data={Food} />
+          ) : tabDashboard && touch === 3 ? (
+            <Hero data={Clothes} />
           ) : (
-            tabDashboard && <Main data={main} setTouch={setTouch} />
+            tabDashboard && (
+              <Main data={main} setData={setData} setTouch={setTouch} />
+            )
           )}
+
           {tabEwaste && <Contribute />}
           {tabFood && <ContributeFood />}
           {tabClothes && <ContributeClothes />}
-          {/*{tabFood && <Hero data={data} />}
-          {tabClothes && <Hero data={data} />}
-          {tabProfile && <Hero data={data} />} */}
+
           {tabProfile && <Profile />}
         </div>
       </div>
