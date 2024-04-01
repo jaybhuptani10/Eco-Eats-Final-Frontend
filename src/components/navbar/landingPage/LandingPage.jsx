@@ -4,8 +4,10 @@ import { FaArrowUpLong } from "react-icons/fa6";
 import styles from "./LandingPage.module.css";
 import { motion } from "framer-motion";
 import image from "./dustbin.jpeg";
+import { useNavigate } from "react-router-dom";
 
 const LandingPage = () => {
+  const navigate = useNavigate();
   return (
     <div
       data-scroll
@@ -41,7 +43,9 @@ const LandingPage = () => {
         })}
 
         <div className="start">
-          <div className="text">Start With Us</div>
+          <div className="text" onClick={() => navigate("/AgentDashboard")}>
+            Start With Us
+          </div>
           <div className="circle">
             <span className="arrow">
               <FaArrowUpLong />

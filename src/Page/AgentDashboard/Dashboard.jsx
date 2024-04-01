@@ -100,7 +100,7 @@ const ADashboard = () => {
       setTabFood(true);
       setTabClothes(false);
       setTabProfile(false);
-    } else if (e.target.innerText === ">Pending") {
+    } else if (e.target.innerText === "Pending") {
       setTabDashboard(false);
       setTabEwaste(false);
       setTabFood(false);
@@ -134,7 +134,7 @@ const ADashboard = () => {
               tabEwaste === true && "Dashboard-item-selected"
             } `}
           >
-            E-Waste
+            New Requests
           </div>
           <div
             onClick={(e) => onTabSelected(e)}
@@ -142,7 +142,7 @@ const ADashboard = () => {
               tabFood === true && "Dashboard-item-selected"
             } `}
           >
-            Food Donation
+            Accepted
           </div>
           <div
             onClick={(e) => onTabSelected(e)}
@@ -150,7 +150,7 @@ const ADashboard = () => {
               tabClothes === true && "Dashboard-item-selected"
             } `}
           >
-            Clothes Donation
+            Pending
           </div>
           <div
             onClick={(e) => onTabSelected(e)}
@@ -163,9 +163,9 @@ const ADashboard = () => {
         </div>
         <div className="right-dashboard">
           {tabDashboard && <Hero data={main} />}
-          {tabEwaste && <Contribute />}
-          {tabFood && <ContributeFood />}
-          {tabClothes && <ContributeClothes />}
+          {tabEwaste && <Hero data={main} />}
+          {tabFood && <Hero data={main} />}
+          {tabClothes && <Hero data={main} />}
           {/*{tabFood && <Hero data={data} />}
           {tabClothes && <Hero data={data} />}
           {tabProfile && <Hero data={data} />} */}
