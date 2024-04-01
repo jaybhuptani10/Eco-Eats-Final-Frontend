@@ -33,6 +33,8 @@ const Modal = ({ onClose }) => {
         <FaWindowClose onClick={onClose} />{" "}
         {/* Call onClose function on click */}
         <h1>Modal</h1>
+        <button>Accept</button>
+        <button>Reject</button>
       </div>
     </motion.div>
   );

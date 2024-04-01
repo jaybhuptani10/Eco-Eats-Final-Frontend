@@ -57,15 +57,6 @@ const Login = () => {
       toast.error("Please fill all inputs");
     }
   };
-  useEffect(() => {
-    if (token == null) {
-      console.log(token);
-    } else {
-      console.log("You are not logged in");
-      console.log("You are already logged in");
-      navigate("/Dashboard");
-    }
-  }, [token]);
 
   return (
     <div className="Login-Page">

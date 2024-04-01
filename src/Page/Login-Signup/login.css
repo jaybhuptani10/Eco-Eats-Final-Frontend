@@ -1,7 +1,7 @@
 .Login-Page{
     min-height: 100vh;
     width: 100%;
-    background:linear-gradient(#2A00B7,#42006C);
+    background:linear-gradient(#67e967,#30e93c);
     position: relative;
 
 }
@@ -16,6 +16,7 @@
     flex-direction: column;
     margin: auto;
     background-color: white;
+    border-radius: 20px;
     
 
     
