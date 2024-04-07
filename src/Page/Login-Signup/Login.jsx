@@ -7,15 +7,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 const Login = () => {
-  const [token, setToken] = useState(localStorage.getItem("auth") || null);
   const navigate = useNavigate();
-  const parseJwt = (token) => {
-    try {
-      return JSON.parse(atob(token.split(".")[1]));
-    } catch (e) {
-      return null;
-    }
-  };
 
   const handleLoginSubmit = async (e) => {
     e.preventDefault();
@@ -30,33 +22,27 @@ const Login = () => {
 
       try {
         const response = await axios.post(
-          "http://localhost:3000/api/login",
-          formData
+          "http://localhost:4000/api/auth/login",formData,{
+            withCredentials: true
+          }
+          
         );
-        localStorage.setItem("auth", JSON.stringify(response.data.token));
-        console.log("Login Successful");
-        const decodedToken = parseJwt(response.data.token);
-        const role = decodedToken.role;
-
-        // Redirect based on user's role
-        if (role === "Agent") {
+        console.log("Login Successful")
+        const{role} = response.data;
+        if(role === "donor"){
           navigate("/Dashboard");
-          console.log("Agent");
-          console.log("clicked");
-        } else if (role === "Donor") {
-          navigate("/Dashboard");
-          console.log("Donor");
-        } else {
-          navigate("/Login");
+        }else if(role === "agent"){
+          navigate("/AgentDashboard");
         }
       } catch (err) {
+        alert("Invalid Credentials");
         console.log(err);
-        toast.error(err.message);
       }
     } else {
       toast.error("Please fill all inputs");
     }
   };
+
 
   return (
     <div className="Login-Page">
